@@ -35,9 +35,7 @@ const func = async function (a) {
 function getRepHtml(a) {
   a.forEach((el) => {
     let html = `<div class="repositories flex">
-        <div class="repoTitle">
-          <h1>Latest Repos</h1>
-        </div>
+        
 
         <div class="latestRepos flex">
           <p class="repoName">${el.name}</p>
@@ -102,31 +100,6 @@ search();
 //       htmlFile(two);
 //       console.log(two);
 //     });
-// }
-
-// function htmlFile(arr) {
-//   answerPage.insertAdjacentHTML(
-//     "beforeend",
-//     `
-//   <div class="answer--left flex">
-//     <img src="${arr.avatar_url}" alt="">
-//     <a href="${arr.html_url}" class="btn flex">View Profile</a>
-//   </div>
-//   <div class="answer--right">
-//   <div class="answer--right--top flex">
-//     <div class="repo box1"><p>Public Repos:${arr.public_repos}</p></div>
-//     <div class="gists box1"><p>Public Gists:${arr.public_gists}</p></div>
-//     <div class="follower box1"><p>Followers:${arr.followers}</p></div>
-//     <div class="following box1 "><p>Following:${arr.following}</p></div>
-//   </div>
-//   <div class="answer--right--bottom">
-//     <p class="box2">Company:${arr.company}</p>
-//     <p class="box2">Website/Blog:${arr.events_url}</p>
-//     <p class="box2">Location:${arr.location}</p>
-//     <p class="box2">Member since:${arr.updated_at}</p>
-//   </div>
-//   </div>`
-//   );
 // }
 
 // document.addEventListener("keydown", function (e) {
