@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800;900&family=Questrial&family=Varela+Round&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Questrial', sans-serif;
+font-family: 'Varela Round', sans-serif;
+}
+
+:root {
+  --nav: #161B22;
+  --back: #0D1117;
+  --kok: #1770F0;
+  --sariq: #F1E05A;
+  --css: #563D7C;
+  --text: #C9D1D9;
+  --btn: #2A3037;
+}
+
+body {
+  background-color: var(--back);
+}
+
+.container {
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
+.navbar {
+  height: 70px;
+  background-color: var(--nav);
+  color: var(--text);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav_one {
+  display: flex;
+  align-items: center;
+  margin: 15px;
+}
+
+.nav_one > i{
+  font-size: 30px;
+}
+
+
+.links {
+  margin: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.links .link {
+  margin: 10px;
+}
+
+input {
+  outline: none;
+  background-color: var(--back);
+  border: none;
+  width: 85%;
+  
+}
+
+.search {
+  padding: 2px;
+  margin: 10px;
+  background-color: var(--back);
+  width: 300px;
+  border: 0.5px solid var(--text);
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.search span {
+  border: 1px solid var(--text);
+ padding: 3px 7px;
+ border-radius: 5px;
+}
+
+.nav_two i {
+  margin: 3px;
+}
+
+/* section account */
+
+.account {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  background-color: var(--back);
+  height: 100vh;
+  color: var(--text);
+  padding: 20px;
+}
+
+.account_one {
+  border: 2px solid rebeccapurple;
+  padding: 20px;
+}
+
+.account img {
+  width: 320px;
+  height: 320px;
+  margin: 20px auto;
+}
+
+.account_name {
+  font-size: 18px;
+}
+
+.account_link {
+  font-size: 15px;
+  opacity: 0.8;
+  margin: 10px 0;
+}
+
+.account_follow {
+  background-color: var(--btn);
+  border: 1px solid var(--text);
+  padding: 5px 8px;
+  border-radius: 10px;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.account_statistic {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.account_gmail {
+  font-size: 15px;
+  margin: 10px 0;
+}
+
+.account_nav {
+  width: 70%;
+  border: 2px solid rebeccapurple;
+}
+
+.account_links {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+
+}
+
+
