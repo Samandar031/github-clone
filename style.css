@@ -1,156 +1,150 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800;900&family=Questrial&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Questrial&family=Varela+Round&display=swap');
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  list-style: none;
   font-family: 'Montserrat', sans-serif;
 font-family: 'Poppins', sans-serif;
 font-family: 'Questrial', sans-serif;
 font-family: 'Varela Round', sans-serif;
 }
-
-:root {
-  --nav: #161B22;
-  --back: #0D1117;
-  --kok: #1770F0;
-  --sariq: #F1E05A;
-  --css: #563D7C;
-  --text: #C9D1D9;
-  --btn: #2A3037;
+html {
+  font-size: 62.5%;
 }
-
 body {
-  background-color: var(--back);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
-
-.container {
-  max-width: 1366px;
-  margin: 0 auto;
-}
-
-.navbar {
-  height: 70px;
-  background-color: var(--nav);
-  color: var(--text);
+.flex {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
-
-.nav_one {
-  display: flex;
-  align-items: center;
-  margin: 15px;
+.big {
+  flex-direction: column;
 }
-
-.nav_one > i{
-  font-size: 30px;
+.btn {
+  text-decoration: none;
+  font-size: 2rem;
 }
-
-
-.links {
-  margin: 15px;
-  display: flex;
-  align-items: center;
+.searchBox {
+  background-color: white;
+  border: 1px solid var(--back);
+  width: 80%;
+  margin-top: 6rem;
+  font-size: 2rem;
+  padding: 3rem;
+  line-height: 5rem;
+  margin-bottom: 3rem;
 }
-
-.links .link {
-  margin: 10px;
+.searchBox  {
+  font-size: 2.2rem;
+  opacity: 0.9;
 }
-
-input {
+.searchBox input {
+  width: 100%;
+  height: 40px;
   outline: none;
-  background-color: var(--back);
-  border: none;
-  width: 85%;
-  
+  font-size: 2rem;
+  border: 1px solid var(--back);
 }
 
-.search {
-  padding: 2px;
+:root{
+  --back: rgba(0, 0, 0, 0.3);
+  --kok: #343CEB;
+}
+
+.input {
+  padding: 20px;
+}
+
+.searchBox input::placeholder {
+  font-size: 2rem;
+  padding-left: 1rem;
+}
+
+.answer >div {
+  box-shadow: 0 0 10px gray;
   margin: 10px;
-  background-color: var(--back);
-  width: 300px;
-  border: 0.5px solid var(--text);
+  padding: 10px;
   border-radius: 5px;
-  display: flex;
-  justify-content: space-between;
-  
 }
 
-.search span {
-  border: 1px solid var(--text);
- padding: 3px 7px;
- border-radius: 5px;
+/* .answer--left {
+  height: 300px;
+  border: 2px solid red;
+} */
+
+.answer--left img {
+  width: 90%;
+  border-radius: 50%;
 }
-
-.nav_two i {
-  margin: 3px;
+.answer--left {
+  flex-direction: column;
 }
-
-/* section account */
-
-.account {
+.answer {
+  padding: 3rem;
+  border: 1px solid var(--back);
+  width: 80%;
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  background-color: var(--back);
-  height: 100vh;
-  color: var(--text);
-  padding: 20px;
+  grid-template-columns: 1fr 3fr;
 }
-
-.account_one {
-  border: 2px solid rebeccapurple;
-  padding: 20px;
+.btn {
+  width: 80%;
+  height: 40px;
+  border: none;
+  color: white;
+  background-color: var(--kok);
+  border-radius: 5px;
+  margin-top: 3rem;
 }
-
-.account img {
-  width: 320px;
-  height: 320px;
-  margin: 20px auto;
+.answer--right--top {
+  justify-content: left;
+  gap: 1rem;
 }
-
-.account_name {
-  font-size: 18px;
+.box1 {
+  color: white;
+  font-size: 1.6rem;
+  padding: 0.3rem 1rem;
 }
-
-.account_link {
-  font-size: 15px;
-  opacity: 0.8;
-  margin: 10px 0;
+.answer--right--bottom {
+  margin-top: 2rem;
 }
-
-.account_follow {
-  background-color: var(--btn);
-  border: 1px solid var(--text);
-  padding: 5px 8px;
-  border-radius: 10px;
-  text-align: center;
-  margin: 10px 0;
+.box2 {
+  font-size: 2rem;
+  padding: 1rem 1rem;
+  border: 0.5px solid var(--back);
 }
-
-.account_statistic {
-  font-size: 14px;
-  opacity: 0.8;
+.repoTitle {
+  width: 80%;
+  text-align: left;
+  margin-top: 2rem;
+  font-size: 1.6rem;
 }
-
-.account_gmail {
-  font-size: 15px;
-  margin: 10px 0;
-}
-
-.account_nav {
-  width: 70%;
-  border: 2px solid rebeccapurple;
-}
-
-.account_links {
-  display: flex;
+.latestRepos {
+  margin-top: 2rem;
+  padding: 2rem;
+  border: 0.5px solid var(--back);
   justify-content: space-between;
-  padding: 5px;
-
+  width: 80%;
+}
+.repoName {
+  font-size: 2rem;
+  color: blueviolet;
+}
+.repositories {
+  flex-direction: column;
+  width: 80%;
 }
 
-
+.answer--right--top div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #343CEB;
+}
