@@ -102,9 +102,9 @@ search();
 //     });
 // }
 
-// document.addEventListener("keydown", function (e) {
-//   if (e.key == "Enter") {
-//     getUrl(input.value);
-//     input.value = "";
-//   }
-// });
+document.addEventListener("keydown", function (e) {
+  if (e.key == "Enter") {
+    getUrl(input.value);
+    input.value = "";
+  }
+});
